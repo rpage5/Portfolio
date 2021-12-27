@@ -4,6 +4,12 @@
     --tertiary-color: #c7b895;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     color: var(--secondary-color);
     background-color: var(--tertiary-color);
@@ -85,6 +91,49 @@ header nav ul li a:hover {
     font-size: 55px;
     color: var(--secondary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.my-projects {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    flex: 1;
+    margin: 20px;
+    display: grid;
+}
+
+.project img {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 48px;
+    color: var(--secondary-color);
+    border-bottom: 3px solid;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--primary-color);
+    width: 100%;
+    padding: 20px;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
 }
 
 
